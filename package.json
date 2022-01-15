@@ -1,0 +1,23 @@
+{
+  "name": "group_seven_gpuonline",
+  "version": "1.0.0",
+  "description": "\"proyecto de estudio con digital house GPUOnline web de tarjetas graficas tecnologia\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bernaljuanse/Group_Seven_GPUOnline.git"
+  },
+  "author": "\"LiamAndresEvans ClaudiaBetancourt SebastianBernal\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bernaljuanse/Group_Seven_GPUOnline/issues"
+  },
+  "homepage": "https://github.com/bernaljuanse/Group_Seven_GPUOnline#readme",
+  "keywords": [],
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
