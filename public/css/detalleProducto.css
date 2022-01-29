@@ -1,0 +1,253 @@
+/*IMPORT*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@100;400;500&display=swap');
+
+/*VARIABLE*/
+
+:root {
+    --orbitron: 'Orbitron', sans-serif;
+}
+
+/*MAIN*/
+.main-detail-product{
+    background-color: white;
+}
+
+/* .photo-description-detail-product img {
+    width: 100%;
+    padding: 1%;
+}
+ */
+
+.photo-description-detail-product .verde img {
+    width: 100%;
+}
+
+.photo-description-detail-product .naranja img {
+    display: none;
+}
+
+.box-datail-product{
+    width: 100%;
+}
+
+.box-datail-product p{
+    color: black;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.box-datail-product .review-detail-product{
+    font-size: 11px;
+}
+
+.desing-detail-product{
+    display: flex;    
+}
+
+.desing-detail-product p {
+    margin-right: 10px;
+}
+
+.heart-detail-product{
+    color: black;
+}
+
+.desing-detail-product input {
+    width: 20px;
+}
+
+.button-detail-product {
+    width: 20px;
+    background-color: var(--verde);
+    border: none;
+    padding: 2px 0px;
+    border-radius: 3px
+}
+
+
+.stock-detail-product .desing-stock-detail-product{
+    background-color: var(--verde);
+    width: 90%;
+    border: solid 1px;
+}
+
+.financing-detail-product {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.financing-detail-product div {
+    width: 90%;
+}
+
+.financing-detail-product div p{
+    border: solid 1px;
+    margin-top: 8px;
+}
+
+.desing-stock-detail-product{
+    background-color: var(--verde);
+    width: 90%;
+    border: solid 1px;
+}
+
+.warranty-detail-product {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: center;
+    justify-content: start;
+}
+
+.heart-detail-product, .shopping-detail-product{
+    font-size: 18px;
+    border: solid 1px black;
+    padding: 0px 3px;
+}
+
+.shopping-detail-product{
+    margin-left: 5px;
+}
+
+.buy-detail-product{
+    background-color: var(--verde);
+    width: 70%;
+    border: solid 1px;
+}
+
+.features-detail-product {
+    margin-top: 15px;
+}
+
+.menu-detail-product {
+    margin-left: 20px;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+
+.menu-detail-product li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-family: var(--orbitron);
+}
+
+.menu-detail-product hr{
+    margin-left: -20px;
+}
+
+.desktop-hr-detail-product {
+    display: none;
+}
+
+/*inicio recommended-products*/
+
+.recommended-products h3 {
+    color: var(--negro);
+    margin-left: 20px;
+    font-size: 16px;
+    font-family: var(--orbitron);
+}
+.recommended-products h4 {
+    color: var(--negro);
+    margin-left: 20px;
+    font-size: 14px;
+}
+.recommended-products p{
+    color: var(--negro);
+    margin-left: 20px;
+    font-size: 12px;
+}
+    /*inicio de diseño visual de carrusel*/
+.recommended-products div{
+    display: flex;
+    justify-content: center;
+}
+    /*fin de diseño visual de carrusel*/
+
+.recommended-products img{
+    width: 50%;
+}
+
+.recommended-products .buttons{
+    width: 20px;
+    background-color: var(--verde);
+    border: none;
+    padding: 2px 0px;
+    margin: 0px;
+    border-radius: 3px;
+    display: block;
+}
+    /*fin recommended-products*/
+
+@media (min-width: 361px){ 
+    .desing-stock-detail-product{
+        text-align: center;
+    }
+
+    .recommended-products :is(h4, p) {
+        text-align: center;
+    }
+}
+
+
+
+
+@media screen and (min-width: 769px){
+    .photo-description-detail-product{
+        display: flex;
+    }
+
+    .photo-description-detail-product .roja  {
+        width: 50%;
+    }
+
+    .box-datail-product {
+        width: 50%;
+        justify-items: flex-end;
+    }
+
+    .box-datail-product p {
+        font-size: 20px;
+    }
+
+    .box-datail-product .review-detail-product {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .desing-detail-product input {
+        width: 50px;
+    }
+
+    .photo-description-detail-product .naranja {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .photo-description-detail-product .naranja img {
+        display: flex;
+        width: 30%;
+    }
+    
+    .menu-detail-product {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .mobile-hr-detail-product {
+        display: none;
+    }   
+
+    .desktop-hr-detail-product {
+        display: flex;
+        height: 3px;
+        background-color: var(--gris-oscuro);
+    }
+
+    .recommended-products {
+        margin-top: 15px;
+    }
+}
