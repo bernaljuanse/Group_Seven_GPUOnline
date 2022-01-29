@@ -1,0 +1,380 @@
+
+@font-face{
+    font-family: "android-101";
+    src: url("/fonts/Android\ 101.otf");
+    
+  }
+
+:root {
+    /*paleta de colores*/
+    --verde:#75B72F;
+    --verde-oscuro:#639928;
+    --verde-oscuro-op:#538121;
+    --azul: #03264c;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --gris-medio: #e0dcda;  
+    --negro: #000000;
+    --blanco: #ffffff;
+    /* tamaños de fuentes */
+    --text-sm: 1.2em;
+    --text-md: 1.6em;
+    --text-lg: 1.8em;
+    --title-sm: 2.0em;
+    --title-md: 2.4em;
+    /* familias de fuentes */
+    --nunito: 'Nunito', sans-serif;
+    --montserrat: "Montserrat", sans-serif; /*de google*/
+    --letra:"Montserrat:wght@0,300";
+    --android101: "android-101", sans-serif;
+    }
+    
+
+/*HEADER*/
+
+header .logo img{
+    max-width: 200px;
+}
+
+div.top-header-basket{
+    display: block;
+    text-align: center;
+}
+
+.menu2-top-header-basket{
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    text-align: initial;
+    justify-content: space-evenly;
+}
+.menu2-top-header-basket i{
+    margin: 0px 2px;
+    font-size: 20px;
+    transition: color 0.25s ease-in;
+}
+.menu2-top-header-basket p{
+    margin: 0px 2px;
+    font-size: 10px;
+    transition: color 0.25s ease-in;
+}
+
+.menu2-top-header-basket i:hover, .menu2-top-header-basket p:hover{
+    color:var(--verde);
+}
+
+/*MAIN*/
+
+.main-carrito{
+    background-color: var(--blanco);
+    font-family: var(--nunito);
+}
+
+.top-title{
+    color: var(--negro);
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.basket-item{
+    padding: 15px 5px;
+}
+
+.basket-item-container article{
+    padding: 25px 0px 0px 0px;
+    display: flex;
+}
+
+.basket-item-container article img{
+    width: 50%;
+}
+
+.basket-item-container h3{
+    color: var(--negro);
+    
+}
+
+.basket-item-product-card{
+    font-family: var(--nunito);
+    width: 100%;
+}
+
+.basket-item-product-card h4{
+    color: var(--negro);
+    margin-bottom: 10px;
+}
+    /*inicio diseño de boton + y -*/
+.basket-item-product-card form .boton{
+    width: 20px;
+    background-color: var(--verde);
+    border: none;
+    padding: 2px 0px;
+    border-radius: 3px;
+}
+    /*fin diseño de boton + y -*/
+
+.basket-item-product-card form input{
+    width: 20px;
+}
+
+.basket-item-product-card p{
+    padding: 10px 0px 15px 0px;
+    color: var(--negro);
+    text-align: end;
+}
+
+.basket-item-product-card .close-form-button{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color:var(--blanco);
+    border: none;
+    text-align: end;
+}
+/*oculto para smartphone visible para escritorio, usar grid*/
+.desktop-basket{
+    display: none;
+}
+.buttons-container{
+    margin: 10px 0px;
+}
+
+.buttons-container .buttons{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+    /*inicio recommended-products*/
+.recommended-products h3 {
+    color: var(--negro);
+    margin-left: 20px;
+    font-size: 16px;
+    font-family: var(--android101);
+
+}
+.recommended-products h4 {
+    color: var(--negro);
+    margin-left: 20px;
+    font-size: 14px;
+}
+.recommended-products p{
+    color: var(--negro);
+    margin-left: 20px;
+    font-size: 12px;
+}
+    /*inicio de diseño visual de carrusel*/
+.recommended-products div{
+    display: flex;
+    justify-content: center;
+}
+    /*fin de diseño visual de carrusel*/
+
+.recommended-products img{
+    width: 50%;
+}
+
+.recommended-products .buttons{
+    width: 20px;
+    background-color: var(--verde);
+    border: none;
+    padding: 2px 0px;
+    margin: 0px;
+    border-radius: 3px;
+    display: block;
+}
+    /*fin recommended-products*/
+
+.main-paragraph-basket p{
+    color: var(--negro);
+    /* border: solid;
+    border-width: 0.5px; */
+}
+
+.price-basket h3{
+    color: var(--negro);
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.price-basket h4{
+    color: var(--negro);
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.payment-methods{
+    padding-top: 10px;
+    background-color: var(--negro);
+}
+.payment-methods h3{
+    margin: 10px 0px 15px 25px;
+    color: var(--verde);
+    font-size: 14px;
+}
+
+.icons-payment-methods, .secure-payment-methods{
+    margin: 0px 0px 0px 25px;
+    font-size: 30px;
+    color: var(--blanco);
+}
+.icons-payment-methods i{
+    margin-right: 5px;    
+}
+
+.secure-payment-methods{
+    display: flex;
+    align-items: center;
+}
+
+.secure-payment-methods p{
+    font-size: 10px;
+}
+.secure-payment-methods i{
+    margin: 0px 5px;
+}
+
+/*MEJORAR ICONOS, CAMBIARLOS O MANEJAR COLOR*/
+/* .icons-payment-methods .fa-cc-mastercard{
+    color: red;
+    background-color: orange;
+}
+.icons-payment-methods .fa-cc-visa{
+    color: blue;
+    background-color: white;
+}
+
+.icons-payment-methods .fa-cc-paypa{
+    color: skyblue;
+}
+.icons-payment-methods .fa-cc-ame{
+    color: slateblue;
+}
+.icons-payment-methods .fa-money-bill-wave{
+    color: green;
+} */
+
+/*tablet*/
+@media (min-width: 361px){
+    .menu-top-header{
+        display: none;
+    }
+}
+
+@media (min-width: 500px){
+
+    .menu2-top-header-basket{
+        align-items: center;
+    }
+    
+    .menu2-top-header-basket i{
+        font-size: 28px;
+    }
+
+    .menu2-top-header-basket p{
+        font-size: 12px;
+    }  
+   
+    .top-title {
+        padding: 10px 30px;
+    }
+
+    .basket-item-container article {
+        padding: 25px 20px 0px 20px;
+    }
+
+    .buttons-container .buttons {
+        width: 50%;
+    }
+
+    .recommended-products h3, .recommended-products h4, .recommended-products p {
+        margin-left: 40px;
+    }
+    .price-basket h3, .price-basket h4{
+        margin-left: 40px;
+    }
+
+    .payment-methods {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+}
+
+/*escritorio*/
+@media (min-width: 769px){
+
+    .menu2-top-header-basket{
+        align-items: center;
+    }
+
+    .menu2-top-header-basket i{
+        font-size: 36px;
+    }
+
+    .menu2-top-header-basket p{
+        font-size: 16px;
+    }    
+
+    .basket-item{
+        display: flex;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .basket-item-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+    .basket-item-container article {
+        /* padding: 0px 100px; */
+        width: 50%;
+    }
+
+    .desktop-basket{
+        display: block;
+        width: 50%;
+    }
+
+    /*inicio carrusel*/
+    /*solo es visual, implementar carrusel*/
+    .recommended-products{
+        padding-left: 40px;
+        padding-right: 40px;        
+    }
+
+    .recommended-products h3{
+        font-size: 30px;
+        font-family: var(--android101);
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .recommended-products div img{
+        width: 30%;
+    }
+
+    .recommended-products :is(h4, p){
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    /*fin carrusel*/
+
+    /*las clases de main-paragraph-basket, price-basket, buttons-container */
+    /*hacer grid*/
+    .display-none{
+        display: none;
+    }
+    .buttons-container .buttons{
+        width: 16vw;
+        /* background:linear-gradient(141deg, #75B72F 0%, #a54daa 100%); */
+    }
+
+
+    .flex-block-payment-methods{
+        display: block;
+    }
+    .icons-payment-methods, .secure-payment-methods{
+        margin: 10px 0px 25px 25px;
+        font-size: 40px;
+    }
+}

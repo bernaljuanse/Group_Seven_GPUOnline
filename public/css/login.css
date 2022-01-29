@@ -1,0 +1,82 @@
+.main-login{
+    height: 80vh;
+}
+.login{
+    padding-top: 1.6em;
+    min-height: 50vh; /*estaba en 100vh pero dejaba mucho espacio abajo entre botones y footer*/
+    background-color: var(--negro);
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;*/
+}
+.login h3{
+    width: 90%;
+    color: var(--blanco);
+    font-size: var(--text-md); /*--title-md*/
+    font-family: var(--nunito);
+    padding: 1em;
+    margin: 0 auto;
+    text-align: center;    
+}
+.login form{
+    width: 100%;
+    font-family: var(--nunito);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+    align-items: center;
+}
+.login form input{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 0.7em 0; /*auto;*/ /*cero reemplazó auto */
+    width: 70%;
+    font-family: var(--nunito);
+    box-shadow: 0 0 0 1px rgba(0,0,0,.25) /*yo para que el borde sea gris siempre*/
+}
+.login form input:focus{ /*yo esto es para que el borde sea de color celeste cuando se enfoca focus*/
+    border-color: transparent;
+    box-shadow: 0 0 0 .125em var(--verde);
+    outline: none;
+}
+.group-buttons-login{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons-login{    
+        align-items: center;
+        align-self: center;
+        width: 80%;
+        /* margin: 0 auto; */
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 2px;
+        border: none;
+        font-family: var(--nunito);
+        background-color: var(--verde);
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--blanco);
+        transition: background-color 0.25s ease-out;
+        cursor: pointer;    
+        margin: 5px 0px;
+}
+
+.footer-login{ /*yo para que el footer quede abajo del todo*/
+    padding: 4em;
+}
+
+@media (min-width: 769px){
+    .login form input {
+        width: 40vw;
+    }
+    .group-buttons-login{
+        width: 30vw;
+    }
+}

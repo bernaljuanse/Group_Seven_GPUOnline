@@ -53,6 +53,9 @@ p{
     font-family: var(--nunito);
     font-size: var(--text-sm);
 }
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
 
 
 /*CABECERA*/
@@ -200,12 +203,12 @@ main p{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding: 13px;  
+    padding: 10px;  
     border-radius: 2px;
     border: none;
     font-family: var(--nunito);
     background-color: var(--verde);
-    font-size: var(--text-sm); /*tamaño de letra botones*/
+    font-size: 16px; /*tamaño de letra botones*/
     font-weight: 500; /* tamaño de ancho letra botones*/
     color: var(--blanco);
     transition: background-color 0.25s ease-out;    
@@ -349,11 +352,12 @@ footer picture img{
         display: flex;
         
         margin: 0em 0.6em;
-    }
+    }    
     .menu-top-header i{
         margin: 0em 1.7em;  /*suele desplazarse, conflicto*/
         transition: color 0.25s ease-in;
         font-size: 16px; /*no usar var*/
+        color: var(--negro);
     }
     .menu-top-header i:hover{
         color:var(--verde);
@@ -397,6 +401,10 @@ footer picture img{
 
     .main-paragraph{
         padding: 0em 7em;
+    }
+
+    .main-paragraph p{
+        margin: 15px 5px;
     }
 
     /*FOOTER*/

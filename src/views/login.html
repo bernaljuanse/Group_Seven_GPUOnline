@@ -57,6 +57,24 @@
     <!-- el header del login solo tiene logo, debes ocultar todo menos el logo -->
     <main>
         <!-- listo para modificar, exitos!! 😄  -->
+        <main class="main-login">  <!-- inicio de main-->
+            <div class="login">  <!-- inicio class login-->
+                <form action="/" method="post">
+                    <h3>Ingresa!</h3>   
+                    <label for="nombreusuario"></label>
+                    <input type="text" id="nombreusuario" name="nombreusuario" placeholder="nombre de usuario"required>            
+                    <label for="password"></label>
+                    <input type="password" id="password" name="password" placeholder="contraseña"required>
+                    <div class="group-buttons-login">
+                        <button class="buttons-login" type="submit" >continuar</button>
+
+                        <a class="buttons" href="/registro">crear cuenta</a>
+                    </div> <!-- inicio class group-buttons-->
+                    <!-- <input type="button" value="ENVIAR"> -->
+                </form>
+                
+            </div>   <!-- fin class login--> 
+        </main>
     </main>
     <footer>
         <!-- sin footer, no contiene footer -->

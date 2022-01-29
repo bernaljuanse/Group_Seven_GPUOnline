@@ -13,49 +13,228 @@
 </head>
 <body>
     <header>
-        <div class="top-header">
+        <div class="top-header top-header-basket">
             <picture class="logo"> <!--inicio logo-->
                 <a href="/">
                     <img src="./img/logoicononegro.png" alt="Logo de Mercadoliebre">
                 </a>
             </picture> <!--fin logo-->
-            <form class="form"> <!--inicio busqueda-->
-                <input type="text" class="input" placeholder="Busca productos...">
-                <button type="submit" class="submit"><i class="fas fa-search"></i></button>
-            </form>  <!--fin busqueda-->
-            <div class="burger-menu">  <!--inicio burger-menu-->
-                <i class="fas fa-bars"></i> 
-                
-            </div> <!-- fin burger-menu -->
+            <div class="top-header-basket">
+
+            </div>
+                <!-- barra de busqueda estaba aqui-->
+                <!-- burger-menu estaba aqui-->            
             <div class= "menu-top-header"> <!--inicio menu-top-header-->
                 <i class="fas fa-shopping-basket"></i>
                 <i class="fas fa-user"></i>
             </div> <!--fin menu-top-header-->
+            <div class="menu2-top-header-basket">               
+                <i class="fas fa-truck"></i>
+                <div>
+                    <p>ENVIOS</p>
+                    <p>Sigue tus pedidos y devluciones</p>
+                </div>
+                <i class="fas fa-undo-alt"></i>
+                <div>
+                    <p>DEVOLUCIONES</p>
+                    <p>30 dias de devolución</p>
+                </div>
+                <i class="fas fa-user-shield"></i>
+                <div>
+                    <p>PAGO SEGURO</p>
+                    <p>100% seguro</p>
+                </div>
+            </div>
         </div> <!--fin top-header-->
         
-        <nav>
-            <ul class="menu"><!--inicio menu -->
-                <li>
-                    <a href="#">Productos</a>
-                </li>
-                <li>
-                    <a href="#">Servicios</a>
-                </li>
-                <li>
-                    <a href="#">Conceptos</a>
-                </li>
-                <li>
-                    <a href="#">Noticias</a>
-                </li>
-                <li>
-                    <a href="#">Soporte</a>
-                </li>
-            </ul> <!--fin menu -->
-        </nav> <!-- fin nav -->
+        <!-- nav estaba aqui-->        
 
     </header> <!-- fin header -->
-    <main>
+    <hr>
+        
+    <main class="main-carrito">
         <!-- listo para modificar, exitos!! 😄  -->
+        <h3 class="top-title">
+            Artículos en tu cesta
+        </h3>
+        <hr> <!-- barra de separacion-->
+
+        <section class="basket-item"> <!-- inicio de basket-item / product-promotion-->
+            
+            <div class="basket-item-container"> <!-- inicio de basket-item-container/ products-container -->
+                
+                <article> <!-- inicio article -->                    
+                                   
+                    <img src="./img/tarjeta1img.png" alt="">
+                    <div class="basket-item-product-card">
+                        <h3>
+                            Nombre del producto
+                        </h3>
+                        <h4>
+                            ¡En stock!
+                        </h4>
+                        <form action=""> <!-- inicio diseño de boton + y - -->
+                            <button class="boton">-</button>
+                            <input type="text" id="mostrador">
+                            <button class="boton">+</button>
+                        </form> <!-- fin diseño de boton + y - -->
+                        <p>
+                            total precio $1500
+                        </p>
+                        <form class="close-form" action="">
+                            <button class="close-form-button">X</button>                        
+                        </form>
+                        <!--<a class="buttons" href="/register">Más informacion</a> -->
+
+                    </div> <!-- fin product-card -->
+
+                </article> <!-- fin article -->
+
+                <article> <!-- inicio article -->                    
+                                   
+                    <img src="./img/tarjeta1img.png" alt="">
+                    <div class="basket-item-product-card">
+                        <h3>
+                            Nombre del producto
+                        </h3>
+                        <h4>
+                            ¡En stock!
+                        </h4>
+                        <form action="">
+                            <button class="boton">-</button>
+                            <input type="text" id="mostrador">
+                            <button class="boton">+</button>
+                        </form>
+                        <p>
+                            total precio $1500
+                        </p>
+                        <form class="close-form" action="">
+                            <button class="close-form-button">X</button>                        
+                        </form>
+                        <!--<a class="buttons" href="/register">Más informacion</a> -->
+
+                    </div> <!-- fin product-card -->
+
+                </article> <!-- fin article -->
+
+                <article> <!-- inicio article -->                    
+                                   
+                    <img src="./img/tarjeta1img.png" alt="">
+                    <div class="basket-item-product-card">
+                        <h3>
+                            Nombre del producto
+                        </h3>
+                        <h4>
+                            ¡En stock!
+                        </h4>
+                        <form action="">
+                            <button class="boton">-</button>
+                            <input type="text" id="mostrador">
+                            <button class="boton">+</button>
+                        </form>
+                        <p>
+                            total precio $1500
+                        </p>
+                        <form class="close-form" action="">
+                            <button class="close-form-button">X</button>                        
+                        </form>
+                        <!--<a class="buttons" href="/register">Más informacion</a> -->
+
+                    </div> <!-- fin product-card -->
+
+                </article> <!-- fin article -->
+
+            </div> <!-- fin de basket-item-container/ products-container -->
+            <div class="desktop-basket">
+                <section class="main-paragraph main-paragraph-basket"> <!-- inicion section para parrafo basket-->
+            
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias maxime, quos ducimus veniam voluptatum aperiam quae molestias minima ipsa consequatur quisquam praesentium excepturi corrupti reprehenderit culpa tempora animi eaque? Voluptatibus!
+                    </p>
+                    
+                </section> <!-- fin section para parrafo basket-->
+                <section class="price-basket"> <!-- fin price-basket-->
+                    <h3>
+                        Total
+                    </h3>
+                    <h4>
+                        Precio $ 4.500
+                    </h4>
+        
+                </section> <!-- fin price-basket-->
+                <div class="buttons-container">
+                    <button class="buttons">Realizar pedido</button>            
+                </div> <!-- fin buttons-container-->
+            </div>
+
+        </section> <!-- fin de basket-item / product-promotion-->
+        <hr> <!-- barra de separacion-->
+        <div class="buttons-container">
+            <button class="buttons">Vaciar cesta</button>
+            <button class="buttons">Seguir comprando</button>
+        </div>
+        <section class="recommended-products"> <!-- inicio recommended-products-->
+            <h3>
+                Otros usuarios tambien compraron:
+            </h3>
+            <div>   <!-- inicio de diseño visual de carrusel-->
+                <button class="buttons"> < </button>
+                <img src="./img/tarjeta1img.png" alt="">
+                <button class="buttons">></button>
+            </div> <!-- fin de diseño visual de carrusel-->
+            <h4>
+                Nombre del producto
+            </h4>
+            <p>
+                total precio $1500
+            </p>
+        </section> <!-- fin recommended-products-->
+        <div class="buttons-container">
+            <button class="buttons">Añadir</button>            
+        </div> <!-- fin buttons-container-->
+        <section class="main-paragraph main-paragraph-basket display-none"> <!-- inicion section para parrafo basket-->
+            
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias maxime, quos ducimus veniam voluptatum aperiam quae molestias minima ipsa consequatur quisquam praesentium excepturi corrupti reprehenderit culpa tempora animi eaque? Voluptatibus!
+            </p>
+            
+        </section> <!-- fin section para parrafo basket-->
+        <section class="price-basket display-none"> <!-- fin price-basket-->
+            <h3>
+                Total
+            </h3>
+            <h4>
+                Precio $ 4.500
+            </h4>
+
+        </section> <!-- fin price-basket-->
+        <div class="buttons-container display-none">
+            <button class="buttons">Realizar pedido</button>            
+        </div> <!-- fin buttons-container-->
+        <div class="payment-methods"> <!-- inicio payment-methods-->
+            <div class="flex-block-payment-methods">
+                <h3>
+                    Formas de pago:
+                </h3>
+                <div class="icons-payment-methods">
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+            </div>
+            <div class="flex-block-payment-methods">
+                <h3>
+                    100% seguro
+                </h3>
+                <div class="secure-payment-methods">
+                    <p>SSL Secure Connection</p>
+                    <i class="fas fa-shield-alt"></i>
+                    <i class="far fa-check-circle"></i>
+                </div>
+            </div>
+        </div> <!-- fin payment-methods-->
     </main>
     <footer>   <!-- inicio footer -->
         <div class="top-footer">

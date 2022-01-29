@@ -1,0 +1,221 @@
+@import url(home.css);
+
+
+
+
+.register-google{
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding-top: 7vh;
+    /* margin-bottom: 2vh; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.register-google h3{
+    color: var(--blanco);
+    font-size: 16px;
+    margin: 1px;
+}
+.register-google h4{
+    margin: 10px 0px;
+    font-size: 14px;
+}
+.button-google{
+    background-color: var(--blanco);
+    color: var(--negro);
+    padding: 1vh 1vh;
+    width: 40vw;
+}
+.button-google .fa-google{
+    margin: 10px 0px 10px 0px;
+}
+
+.registro{
+    padding-top: 16px;
+    min-height: 100vh;
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+.registro h3{
+    width: 90%;
+    color: var(--blanco);
+    font-size: var(--text-md); /*--title-md*/
+    font-family: var(--montserrat);
+    padding: 1em;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.registro form{
+    width: 60%;
+    font-family: var(--montserrat);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+.registro form h4 {
+    margin-top: 1em;
+}
+.registro form input{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 0.7em 0;
+    font-family: var(--montserrat);
+    
+}
+.registro form input.box-shadow{/*cree clase box-shadow para que aplique solo a ellos*/
+    box-shadow: 0 0 0 1px rgba(0,0,0,.25) /*yo para que el borde sea gris siempre*/
+}
+    /*cree clase box-shadow para que aplique solo a ellos*/
+.registro form input.box-shadow:focus{ /*yo esto es para que el borde sea de color celeste cuando se enfoca focus*/
+    border-color: transparent;
+    box-shadow: 0 0 0 .125em var(--verde);
+    outline: none;
+}
+
+.formGroup{
+    display: flex;
+    flex-direction: column;
+}
+.labelTitle{
+    font-size: 14px;
+    margin-top: 1em;
+}
+.userType{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.3em;
+    
+}
+.userType input.espacio {
+    margin: 1em;
+}
+.hobby-users{
+    display: flex;
+    flex-direction: column;
+    margin: 16px 3px 0px 3px;
+}
+
+.hobby-users espacio{
+    color: var(--verde);
+    background-color: var(--verde);
+}
+
+.hobby-users input.espacio{
+    margin: 1em;
+}
+
+    /* *** inicio solo para checkbox*** */
+/* custom checkbox */
+.checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* hide the browser's default checkbox */
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* create custom checkbox */
+.check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+
+/* on mouse-over, add border color */
+.checkbox:hover input ~ .check {
+    border: 2px solid var(--verde);
+}
+
+/* add background color when the checkbox is checked */
+.checkbox input:checked ~ .check {
+    background-color: var(--verde);
+    border:none;
+}
+
+/* create the checkmark and hide when not checked */
+.check:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* show the checkmark when checked */
+.checkbox input:checked ~ .check:after {
+    display: block;
+}
+
+/* checkmark style */
+.checkbox .check:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* *** fin solo para checkbox*** */
+
+/* .group-buttons{
+    display: flex;
+}
+.buttons-register{
+    margin: 1px 1px;
+} */
+
+@media (min-width: 769px){ 
+
+    .register-google h3{
+        font-size: 26px;
+    }
+    .register-google h4{
+        font-size: 20px;
+    }
+    
+    .registro{ /*codigo para que quede centrado el registro*/
+        margin: 2.125vh auto 0;
+        max-width: 100vh;
+        min-height: 100vh;    
+        padding-bottom: 10vh;    
+    } /*si no quiero, se puede borrar*/
+
+    .registro h3, .registro h4{
+        font-size: 26px;
+    }
+/* *** inicio solo para checkbox*** */
+    /* custom checkbox */
+    .checkbox {        
+        font-size: 16px;        
+    }
+    .check {        
+        height: 25px;
+        width: 25px;        
+    }
+/* *** fin solo para checkbox*** */    
+}

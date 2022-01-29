@@ -57,6 +57,83 @@
     <!-- el header del registro solo tiene logo, debes ocultar todo menos el logo -->
     <main>
         <!-- listo para modificar, exitos!! 😄  -->
+        <main>  <!-- inicio de main-->
+            <div class="register-google">
+                <h3>Crear cuenta</h3>
+                <a class="button-google" href=""> <i class="fab fa-google"></i> entrar con google</a>
+                <h4>----- o bien -----</h4>
+            </div>
+            <div class="registro"> <!-- inicio class register-->
+                <form action="/" method="post">
+                    <h3>Registrate!</h3>
+                    <label for="nombre"></label>
+                    <input class="box-shadow" type="text"  name="nombre" placeholder="Nombre" required>
+                    <label for="apellido"></label>
+                    <input class="box-shadow" type="text"  name="nombre" placeholder="Apellido" required>
+                    <label for="nombreusuario"></label>
+                    <input class="box-shadow" type="text"  name="nombreusuario" placeholder="nombre de usuario" required>
+                    <label for="email"></label>        
+                    <input class="box-shadow" type="email"  name="email" placeholder="email" required >
+                    <label for="password"></label>
+                    <input class="box-shadow" type="password"  name="password" placeholder="elegí tu contraseña"required>
+                    <label for="password"></label>
+                    <input class="box-shadow" type="password"  name="password" placeholder="repite tu contraseña"required>
+                    <!-- se me pasó <label for="password"></label>
+                    <input class="box-shadow" type="password" id="password" name="password" placeholder="contraseña" required >
+                    -->
+                    <h4>fecha de nacimiento</h4>
+                    <input class="box-shadow" type="date" name="mes" id="mes" required>
+                    <input class="box-shadow" type="text" name="" id="date" placeholder="Domicilio" required>
+                    <!-- 
+                        <h4>perfil de usuario</h4>                
+                        <label for="perfil_u"> 
+                            <div class="userType">                   
+                                <input class="espacio" type="radio" name="perfil_u" id="perfil_u"required>
+                                <label for="">Comprador</label>
+                                <input class="espacio" type="radio" name="perfil_u" id="perfil_u"required>
+                                <label for="">Vendedor</label>  
+                            </div>                  
+                        </label>
+                    -->
+                    <h4>intereses</h4>
+                    
+                        <label for="hobby"> <!-- inicio hobby-->
+
+                            <div class="hobby-users"> <!-- inicio hobby-users-->
+                                <label class="checkbox"> PC Multimedia
+                                    <input class="espacio checkbox" type="checkbox" name="hobby" value="electro">
+                                    <span class="check"></span>
+                                </label>
+                                <label class="labelTitle checkbox">
+                                    <input class="espacio checkbox" type="checkbox" name="hobby" value="moda">PC Gaming
+                                    <span class="check"></span>
+                                </label>
+                                <label class="labelTitle checkbox">
+                                    <input class="espacio checkbox" type="checkbox" name="hobby" value="hogar">PC Edición
+                                    <span class="check"></span>
+                                </label>
+                                <label class="labelTitle checkbox">
+                                    <input class="espacio checkbox" type="checkbox" name="hobby" value="jugueteria">PC Streaming
+                                    <span class="check"></span>
+                                </label>
+                            </div>   <!-- fin hobby-users-->
+                        </label> <!-- fin hobby-->
+                        
+                    <!-- inicio enviar archivo foto-->
+                    <h4>elige foto de perfil</h4>
+                    <input class="formGroup" type="file" name="" id="">
+                    <!-- fin enviar archivo foto-->    
+                    
+                    <div class="group-buttons group-buttons-register">
+                        <!-- <button class="buttons buttons-register" type="reset" >borrar</button> -->
+                        <button class="buttons buttons-register" type="submit">crear cuenta</button>
+                    </div>   <!-- inicio class group-buttons-->
+                    <!-- <input type="button" value="ENVIAR"> -->
+            
+                    
+                </form>
+            </div> <!-- fin class registro-->
+        </main>
     </main>
     <footer>
         <!-- sin footer, no contiene footer -->
