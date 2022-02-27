@@ -3,12 +3,12 @@ const router = express.Router();
 
 const mainController = require('../controllers/mainController');
 
+const { route } = require('express/lib/application');
+
 router.get("/", mainController.home);
+
 router.get("/carrito",mainController.carrito);
-router.get("/detalleProducto",mainController.detalleProducto);
-router.get("/login",mainController.login);
-router.get("/registro",mainController.registro);
-router.get("/crearProducto",mainController.crear);
+router.get("/detalleProducto/:id?",mainController.detalleProducto); /* detalle producto particular */
 
 
 module.exports =router;

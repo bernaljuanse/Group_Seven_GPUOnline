@@ -7,23 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-
     <header>
-
     </header>
-
-    <main>
-        
-        <form method="POST" action="/products/crearProducto">            
+    <main>        
+        <h1>editando producto: <%= productToEdit.name %> </h1>
+        <form method="POST" action="/products/editar?_method=PUT">            
             <label for="nombreProducto"></label>
-            <input name="name" type="text" placeholder="nombreProducto">
+            <input name="name" type="text" placeholder="nombreProducto" value="<%= productToEdit.name %>" >
             <label for="descripcionProducto"></label>
-            <input name="description" type="text" placeholder="descripcionProducto">
-            <!-- atencion pendiente subir archivos multer-->
+            <input name="description" type="text" placeholder="descripcionProducto" value="<%= productToEdit.description %>" >
+            
+            <!-- atencion pendiente subir archivos multer -->
             <input type="file" name="imagen" id="">
 
             <label for="categoríaProducto">categoria</label>            
-                <select name="category">
+                <select name="category" >
                     <option value="Gaming">Gaming</option> 
                     <option value="Streaming">Streaming</option> 
                     <option value="Streaming and Gaming">Streaming and Gaming</option>
@@ -32,16 +30,12 @@
             <!-- <input type="checkbox" name="" id=""> -->
             
             <label for="precioProducto"></label>
-            <input name="price" type="text" placeholder="precioProducto">
-                <button type="submit">Actualizar</button>
-                
-      </form>
-       
+            <input name="price" type="text" placeholder="precioProducto" value="<%= productToEdit.price %>" >
+                <button type="submit">Editar</button>
+                <button>eliminar</button>
+        </form>       
     </main>
-
     <footer>
-
-    </footer>
-    
+    </footer>    
 </body>
 </html>

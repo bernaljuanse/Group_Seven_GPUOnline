@@ -5,7 +5,16 @@ const path = require('path');
 
 const app = express();
 const mainRoutes = require("./src/routes/mainRoutes");
+const usersRoutes = require("./src/routes/usersRoutes");
+const productsRoutes = require("./src/routes/productsRoutes");
 
+// Preparando la constante para trabajar con POST
+app.use(express.urlencoded({ extended: false}));
+app.use(express.json());
+
+// Asegurando la compatibilidad con PUT y DELETE
+const methodOverride = require("method-override");
+app.use(methodOverride("_method"));
 
 //variable para subir a heroku || puerto 3000
 const PORT = process.env.PORT || 3000;
@@ -23,16 +32,9 @@ app.set("views", "./src/views");
 //escuchar navegador al servidor express heroku || puerto 3000
 app.listen( PORT, ()=> console.log(`corriendo servidor con Express en el puerto ${PORT}`) );
 
-app.use(mainRoutes);
-
-
-/* app.get('/', (req, res) => res.sendFile(path.resolve(__dirname ,'./src/views/home.html')));
-app.get('/carrito', (req, res) => res.sendFile(path.resolve(__dirname ,'./src/views/carrito.html')));
-app.get('/detalleProducto', (req, res) => res.sendFile(path.resolve(__dirname ,'./src/views/detalleProducto.html')));
-app.get('/registro', (req, res) => res.sendFile(path.resolve(__dirname ,'./src/views/registro.html')));
-app.get('/login', (req, res) => res.sendFile(path.resolve(__dirname ,'./src/views/login.html'))); */
-
-
+app.use("/",mainRoutes);
+app.use("/users",usersRoutes);
+app.use("/products",productsRoutes);
 
 //prueba borrar
 app.get('/productos/:idProductos', (req, res) => res.send(

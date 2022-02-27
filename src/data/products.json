@@ -1,0 +1,41 @@
+[{
+    "id": 1,
+    "name": "Elonore",
+    "description": "Sevior",
+    "image": "Hamilton",
+    "category": "Peso",
+    "brand": "n/a",
+    "price": "$1202.56"
+  }, {
+    "id": 2,
+    "name": "Hakeem",
+    "description": "Blackborough",
+    "image": "Devinne",
+    "category": "Yuan Renminbi",
+    "brand": "n/a",
+    "price": "$628.72"
+  }, {
+    "id": 3,
+    "name": "Allianora",
+    "description": "Langridge",
+    "image": "Sargent",
+    "category": "Euro",
+    "brand": "Energy",
+    "price": "$953.77"
+  }, {
+    "id": 4,
+    "name": "Pansy",
+    "description": "Marjanovic",
+    "image": "Philip",
+    "category": "Lempira",
+    "brand": "Consumer Services",
+    "price": "$1710.38"
+  }, {
+    "id": 5,
+    "name": "Toby",
+    "description": "Casini",
+    "image": "Chris",
+    "category": "Somoni",
+    "brand": "Finance",
+    "price": "$1361.06"
+  }]
