@@ -1,41 +1,23 @@
 [{
     "id": 1,
-    "first_name": "Derwin",
-    "last_name": "Oliffe",
-    "user_name": "Carlotta",
-    "email": "coliffe0@cbc.ca",
-    "password": "DoV108Zw7J",
-    "password_check": "2DSbOvwI"
+    "first_name": "Sebastian",
+    "last_name": "Bernal",
+    "user_name": "juansebernal",
+    "email": "jusebemas@gmail.com",
+    "password": "arrozconleche"
   }, {
     "id": 2,
-    "first_name": "Brita",
-    "last_name": "Yetman",
-    "user_name": "Lowrance",
-    "email": "lyetman1@earthlink.net",
-    "password": "jEhFV13yd",
-    "password_check": "OofwwZI"
+    "first_name": "Liam",
+    "last_name": "Evans",
+    "user_name": "liamevans",
+    "email": "liamandresevans@gmail.com",
+    "password": "jEhFV13yd"
   }, {
     "id": 3,
-    "first_name": "Gerri",
-    "last_name": "Golthorpp",
+    "first_name": "Claudia",
+    "last_name": "Betancour",
     "user_name": "Byrom",
-    "email": "bgolthorpp2@123-reg.co.uk",
-    "password": "ITVNEZ",
-    "password_check": "sGlTZL9"
-  }, {
-    "id": 4,
-    "first_name": "Harlene",
-    "last_name": "Kroger",
-    "user_name": "Yvette",
-    "email": "ykroger3@hatena.ne.jp",
-    "password": "LVJjSBs9TyC",
-    "password_check": "0lvzk6H"
-  }, {
-    "id": 5,
-    "first_name": "Kylie",
-    "last_name": "Wing",
-    "user_name": "Pearle",
-    "email": "pwing4@twitpic.com",
-    "password": "FqSQzfg",
-    "password_check": "Mxtj5y"
-  }]
+    "email": "clau@gmail.com",
+    "password": "ITVNEZ"
+  }
+]
