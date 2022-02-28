@@ -19,6 +19,9 @@ module.exports = {
         //res.send(req.body)
         
             //tambien podemos todo lo que contiene: req.body
+            //si existe crear el nombre requerir file.name y si no poner un nombre por defecto
+            let image = req.file ? req.file.filename : "no existe";
+            console.log(req.file.filename);
             
             let productos = {
                 nombre: req.body.name,

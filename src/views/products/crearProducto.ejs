@@ -14,13 +14,14 @@
 
     <main>
         
-        <form method="POST" action="/products/crearProducto">            
+        <form method="POST" action="/products/crearProducto" enctype="multipart/form-data">            
             <label for="nombreProducto"></label>
             <input name="name" type="text" placeholder="nombreProducto">
             <label for="descripcionProducto"></label>
             <input name="description" type="text" placeholder="descripcionProducto">
             <!-- atencion pendiente subir archivos multer-->
-            <input type="file" name="imagen" id="">
+            <label for="image"></label>
+            <input type="file" name="image" id="image">
 
             <label for="categoríaProducto">categoria</label>            
                 <select name="category">
