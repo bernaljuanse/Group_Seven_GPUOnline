@@ -15,6 +15,7 @@
     <main>
         <% for (let i = 0 ; i< products.length ; i++) { %>
             <form method="POST" action="/products/eliminar/<%= products[i].id %>?_method=DELETE ">
+                <a href="/products/editar/<%= products[i].id%>">Editar</a>
                 <label for="nombreProducto"> </label>
                 <input id="" name="" type="text" value= "<%= products[i].name %>">
                 <label for="descripcionProducto"></label>
@@ -26,11 +27,12 @@
                 <input id="" name="category" type="text" value="<***%= products[i].category %> "> -->
                 <label for="precioProducto"></label>
                 <input id="price" name="price" type="number" value="<%= products[i].price %>">
+                <label for="categoriaProducto">Categoria: </label>
+                <input id="price" name="category" type="text" value="<%= products[i].category %>">
                 <!-- <button type="submit">Editar</button> -->
-                <button type="submit">eliminar</button>
-                
             </form>
         <% } %> 
+        <a href="/products/crearProducto">Crear nuevo producto</a>
     </main>
 
     <footer>

@@ -17,7 +17,7 @@ const { route } = require('express/lib/application');
 router.get("/",productsController.listar); /* listado de producto */
 
 // TAREA, implementar el metodo de detalle para la vista del cliente.
-/* router.get("/detalle/:id", productsController.detail); */
+router.get("/detalle/:id", productsController.detail);
 
 router.get("/crearProducto",productsController.vistaCrear); /* Formulario de creación de productos. solo visualiza crearProducto.ejs */
 
@@ -25,13 +25,10 @@ router.post("/crearProducto", upload.single("image"),productsController.crear); 
 
 
 
-router.get("/editar/:idProduct",productsController.editar); /* Formulario de edición de productos */
-router.put("/editar",function(req,res) {
-    res.send("fui por put")
-}); /* Acción de edición (a donde se envía el formulario): */
+router.get("/editar/:id",productsController.editar); /* Formulario de edición de productos */
 
-router.delete("/eliminar/:id",function(req,res) {
-    res.send("fui por delete")
-}); /* Acción de borrado */
+router.patch("/editar/:id", upload.single('image'),productsController.actualizar); /* Acción de edición (a donde se envía el formulario): */
+
+router.delete("/eliminar/:id", productsController.destroy); /* Acción de borrado */
 
 module.exports =router;

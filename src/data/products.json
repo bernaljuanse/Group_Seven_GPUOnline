@@ -30,21 +30,5 @@
   "category": "Streaming&Gamming",
   "price": "10500000",
   "image": "3080ti.jpg"
- },
- {
-  "id": 5,
-  "name": "Sebas",
-  "description": "Jugar",
-  "category": "Gaming",
-  "price": "1000000",
-  "image": "1646066510547-nuevaImg.jpg"
- },
- {
-  "id": 6,
-  "name": "Liam",
-  "description": "JugarPlay",
-  "category": "Gaming",
-  "price": "5555555",
-  "image": "1646071461279-nuevaImg.jpg"
  }
 ]

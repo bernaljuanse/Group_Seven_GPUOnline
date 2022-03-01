@@ -17,6 +17,12 @@ const controller = {
     vistaCrear: (req,res)=> {
         res.render("./products/crearProducto.ejs")
     },
+    detail: (req, res) => {
+        let id = req.params.id
+        let product = products.find(p => p.id == id );
+
+        res.render("./products/detalleProducto.ejs", { product });
+    },
     crear: (req,res)=> {
             //tambien podemos todo lo que contiene: req.body
             //si existe crear el nombre requerir file.name y si no poner un nombre por defecto
@@ -35,24 +41,44 @@ const controller = {
     },
     editar: (req,res)=> {
         
-            let idProduct = req.params.idProduct;
-            
-            let products =[
-                {id:1 , name:"tarjeta 1 gamer ", description: "para jugar", imagen:"/img/tarjeta1", price:400},
-                {id:2 , name:"tarjeta 2 streaming ", description: "para streaming" , imagen:"/img/tarjeta2", price:500},
-                {id:3 , name:"tarjeta 3 streaming and gaming ", description: "para streaming and jugar", imagen:"/img/tarjeta3", price:900},
-                {id:4 , name:"tarjeta 1 gamer ", description: "para jugar", imagen:"/img/tarjeta1", price:400},
-                {id:5 , name:"tarjeta 2 streaming ", description: "para streaming", imagen:"/img/tarjeta2", price:9595959}
-            ]
+        let id = req.params.id
+		let product = products.find(el => el.id == id)
 
-            let productToEdit = products[idProduct];
-
-            res.render("./products/editarProducto.ejs", {productToEdit:productToEdit});
+		res.render("./products/editarProducto.ejs", { product })
             
         // Campo para Guardar informacion del formulario crear
 
         //res.redirect("/listaProducto") //pensar lo que vamos a redireccionar
     },
+    actualizar: (req, res) => {
+        let id = req.params.id;
+		let productToEdit = products.find(el => el.id == id)
+
+        let image = req.file ? req.file.filename : productToEdit.image;
+
+		productToEdit = {
+			id: productToEdit.id,
+			... req.body,
+			image: image
+		}
+
+		let newProducts = products.map(product => { 
+			if(product.id == productToEdit.id) {
+				return product = {... productToEdit};
+			}
+			return product;
+		})
+
+		fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, " "))
+		res.redirect("/products")
+    },
+    destroy: (req, res) => {
+        let id = req.params.id;
+		let finalProduct = products.filter(el => el.id != id);
+
+		fs.writeFileSync(productsFilePath, JSON.stringify(finalProduct, null, " "))
+		res.redirect("/products")
+    }
 
 
 
